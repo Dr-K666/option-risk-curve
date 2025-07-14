@@ -6,3 +6,6 @@ scipy
 gspread
 oauth2client
 pydantic # Explicitly include pydantic as it's used by FastAPI
+python-dotenv 
+
+

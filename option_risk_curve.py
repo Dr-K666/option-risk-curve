@@ -1,22 +1,3 @@
-You have provided two versions of your Python script for generating option and stock portfolio P\&L curves using `matplotlib`.
-
-Your request is to **carefully merge the second script (the one you've edited and are satisfied with on your PC) into the first script (the one you're using on Render.com).** You specifically want to ensure that **all parameters and changes from the second, preferred script are preserved and incorporated** into the first one.
-
-In essence, you want to update the Render.com version of the script with the refined plotting, axis limits, and break-even annotation logic that you've successfully implemented in your local PC version.
-
-Here's the merged script, incorporating all the changes discussed, including:
-
-1.  **Updated `clean` function:** Handles percentage conversion directly.
-2.  **Updated Black-Scholes `np.sqrt` usage:** Ensures full vectorization.
-3.  **Adjusted `output_dir` for Render.com:** Uses `/tmp` for ephemeral storage.
-4.  **Revised Y-axis range logic:** Calculates `pnl_min` and `pnl_max` only from P\&L values within the displayed X-axis range (which is limited by $\\pm 4$ SD if options are present), and increases the top Y-axis buffer to 20%.
-5.  **Corrected Break-Even (BE) annotation logic:** Break-even points are now calculated and annotated based on the "P\&L at First Option Expiry" curve, not the "P\&L as of Today" curve, which is the standard practice for strategy break-evens.
-6.  **Refined X-axis vertical lines:** Strike prices and stock initial prices are only plotted if they fall within the visible X-axis range.
-7.  **Consistent `analysis_current_date_obj` for local testing:** Hardcoded to "2025-07-12" in `if __name__ == "__main__":` block to match your test data, ensuring consistent local output. (Remember to remove this hardcoding or set `analysis_date_str=None` if you want it to use the current date in production).
-
-Here is the full, merged script:
-
-```python
 import os
 import math
 import numpy as np

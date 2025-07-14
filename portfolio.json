@@ -1,0 +1,29 @@
+[
+  {
+    "Date": "2025-07-14",
+    "Local Symbol": "AAPL",
+    "Symbol": "AAPL",
+    "Expiry": "20250718",
+    "Strike": 150,
+    "Right": "C",
+    "Currency": "USD",
+    "Exchange": "SMART",
+    "Position": 10,
+    "Security Type": "OPT",
+    "Multiplier": 100,
+    "Delta": 0.5,
+    "Gamma": 0.1,
+    "Vega": 0.2,
+    "Theta": -0.01,
+    "IV (%)": 25.0,
+    "Option Close": 2.5,
+    "Underlying Close": 148,
+    "Days to Maturity": 4,
+    "Market Value": 2500,
+    "Intrinsic Value": 0,
+    "Time Value": 2.5,
+    "Daily Theta ($)": -1,
+    "Effective Shares": 1000,
+    "Delta Dollars": 5000
+  }
+]
